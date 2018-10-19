@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learnning AngularJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+  <script>
+    angular.module("myApp", []);
+    angular.module("myApp").controller("HelloWorldCtrl", ['$scope', function($scope) {
+      $scope.message = "Hello World";
+    }]);</script>
+</head>
+<body ng-controller="HelloWorldCtrl">
+  {{message}}
+</body>
+</html>
