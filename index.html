@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="listaTelefonica">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Learnning AngularJS</title>
+  <title>Lista Telefonica | Learnning AngularJS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/bootstrap-grid.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+  <script src="lib/angular.js"></script>
   <script>
-    angular.module("myApp", []);
-    angular.module("myApp").controller("HelloWorldCtrl", ['$scope', function($scope) {
-      $scope.message = "Hello World";
+    const app = angular.module("listaTelefonica", []);
+    app.controller("listaTelefonicaController", ['$scope', function($scope) {
+      $scope.appTitulo = "Lista Telefonica";
     }]);</script>
 </head>
-<body ng-controller="HelloWorldCtrl">
-  {{message}}
+<body ng-controller="listaTelefonicaController">
+  <div class="jumbotron">
+    <h3>{{appTitulo}}</h3>
+  </div>
 </body>
 </html>
