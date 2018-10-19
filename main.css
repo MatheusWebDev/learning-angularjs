@@ -8,3 +8,11 @@
   margin-top: 30px;
   background: white;
 }
+
+.selecionado {
+  background: #fafad2;
+}
+
+footer {
+  text-align: center;
+}
