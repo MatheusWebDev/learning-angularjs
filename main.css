@@ -1,5 +1,5 @@
 .jumbotron {
-  width: 600px;
+  width: 800px;
   text-align: center;
   margin: 20px auto;
 }
@@ -15,4 +15,8 @@
 
 footer {
   text-align: center;
+}
+
+.badge {
+  cursor: pointer;
 }
